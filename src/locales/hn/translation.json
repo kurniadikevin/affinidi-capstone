@@ -19,5 +19,6 @@
     "city" : "शहर",
     "country" : "देश",
     "submitorder" : "आदेश प्रस्तुत",
-    "checkout" : "चेक आउट"
+    "checkout" : "चेक आउट",
+    "currency" : "INR"
   }

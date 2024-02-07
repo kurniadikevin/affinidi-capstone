@@ -19,5 +19,6 @@
     "city" : "Ciudad",
     "country" : "Pais",
     "submitorder" : "Orden de envio",
-    "checkout" : "Verificar"
+    "checkout" : "Verificar",
+    "currency" : "EUR"
   }

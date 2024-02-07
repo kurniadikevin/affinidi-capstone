@@ -19,5 +19,6 @@
     "city" : "城市",
     "country" : "国家",
     "submitorder" : "提交订单",
-    "checkout" : "查看"
+    "checkout" : "查看",
+    "currency" : "CNY"
   }

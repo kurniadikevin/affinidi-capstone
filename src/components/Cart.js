@@ -2,10 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 import { useTranslation } from "react-i18next";
+import { countryConversion } from '../locales/languageCodeList';
 
 const Cart = ({ cartItems }) => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+
+    //format for currency english-US format
+    const formatter = new Intl.NumberFormat('en-US');
+
+    //get current language that store in session to sync currency
+    const countryData = JSON.parse( sessionStorage.getItem('language'));
+    const conversion= countryConversion[countryData];
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
@@ -37,7 +45,7 @@ const Cart = ({ cartItems }) => {
                 <td><img src={item.imageUrl} alt={item.name} /></td>
                 <td>{item.name}</td>
                 <td>{item.quantity}</td>
-                <td>${item.price}</td>
+                <td>{formatter.format(item.price * conversion)} {t('currency')}</td>
               </tr>
             ))
           )}
@@ -45,7 +53,7 @@ const Cart = ({ cartItems }) => {
         <tfoot>
           <tr>
             <td colSpan="3">{t('total')}</td>
-            <td>${getTotalPrice()}</td>
+            <td>{formatter.format(getTotalPrice() * conversion)} {t('currency')}</td>
           </tr>
         </tfoot>
       </table>

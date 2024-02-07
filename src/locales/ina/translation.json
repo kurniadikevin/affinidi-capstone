@@ -19,5 +19,6 @@
    "city" : "Kota",
    "country" : "Negara",
    "submitorder" : "Buat pesanan",
-   "checkout" : "Pesanan"
+   "checkout" : "Pesanan",
+   "currency" : "IDR"
   }

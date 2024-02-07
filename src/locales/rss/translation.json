@@ -19,5 +19,6 @@
     "city" : "Город",
     "country" : "Страна",
     "submitorder" : "Подтвердить заказ",
-    "checkout" : "Проверить"
+    "checkout" : "Проверить",
+    "currency" : "RUB"
   }

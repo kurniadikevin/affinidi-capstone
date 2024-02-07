@@ -19,5 +19,6 @@
     "city" : "City",
     "country" : "Country",
     "submitorder" : "Submit Order",
-    "checkout" : "Checkout"
+    "checkout" : "Checkout",
+    "currency" : "USD"
   }

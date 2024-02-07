@@ -19,5 +19,6 @@
     "city" : "Stadt",
     "country" : "Land",
     "submitorder" : "Bestellung abschicken",
-    "checkout" : "Kasse"
+    "checkout" : "Kasse",
+    "currency" : "EUR"
   }

@@ -4,7 +4,7 @@ import UserContext from '../contexts/UserContext';
 import { AffinidiLoginButton, useAffinidiProfile } from '@affinidi/affinidi-react-auth';
 import './Header.css';
 import { useTranslation } from "react-i18next";
-
+import { countryCode } from '../locales/languageCodeList';
 
 const Header = () => {
   const { setProfile } = useContext(UserContext);
@@ -15,34 +15,31 @@ const Header = () => {
   const [localProfile, setLocalProfile] = useState(null);
   const { t, i18n } = useTranslation();
 
+  // Store current language to sync for currency conversion 
+  const storeLanguageForCurrency=(input)=>{
+    sessionStorage.setItem('language', JSON.stringify(input));
+  }
+
   //Creating a method to change the language from profile country data
   const changeLanguageHandler = (languageValue) => {
       i18n.changeLanguage(languageValue) 
+      storeLanguageForCurrency(languageValue)
     }
 
   // Change language from option
   const changeLanguageByOption= (e) => {
     const languageValue = e.target.value
     i18n.changeLanguage(languageValue);
+    storeLanguageForCurrency(languageValue);
   }
 
   // Convert country name to specific country code
   const findCountryCode=(input)=>{
-    const codeList={
-      'english' : 'en',
-      'usa' : 'en',
-      'america' : 'en',
-      'china' : 'cnn',
-      'france' : 'frnc',
-      'germany' :'grm',
-      'india' : 'hn',
-      'indonesia' : 'ina',
-      'russia' : 'rss',
-      'spanyol' : 'spa'
-    }
     // return english language as default if code not found
-   return codeList[input] ? codeList[input] : 'en'
+   return countryCode[input] ? countryCode[input] : 'en'
   }
+
+ 
 
   useEffect(() => {
   // Convert objects to strings to compare them
@@ -65,6 +62,7 @@ const Header = () => {
   },[])
 
   const logout = () => {
+    storeLanguageForCurrency('en')
     handleLogout();
     window.location.href = "/";
   };
@@ -84,7 +82,6 @@ const Header = () => {
     }
 
     if (profile) {
-      console.log(profile)
         return (
           <div>
             <span>{t('welcome')},  {profile.givenName}</span>

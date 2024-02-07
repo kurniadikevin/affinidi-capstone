@@ -19,5 +19,6 @@
     "city" : "Ville",
     "country" : "Pays",
     "submitorder" : "Soumettre la commande",
-    "checkout" : "Vérifier"
+    "checkout" : "Vérifier",
+    "currency" : "EUR"
   }
