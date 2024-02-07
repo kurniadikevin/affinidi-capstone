@@ -84,6 +84,7 @@ const Header = () => {
     }
 
     if (profile) {
+      console.log(profile)
         return (
           <div>
             <span>{t('welcome')},  {profile.givenName}</span>

@@ -7,6 +7,9 @@ const ProductDisplay = ({ addToCart }) => {
   const products = [
     { id: 1, name: 'Hoodie', price: 10, imageUrl: 'hoodie.png' },
     { id: 2, name: 'T-Shirt', price: 15, imageUrl: 'tee.png' },
+    { id: 3, name: 'Jeans', price: 30, imageUrl: 'jean.png' },
+    { id: 4, name: 'Yellow-Dress', price: 20, imageUrl: 'yellow-dress.png' },
+    
   ];
 
   const { t, i18n } = useTranslation();
