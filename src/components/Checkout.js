@@ -3,11 +3,13 @@ import UserContext from '../contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
 import ConfirmationModal from './ConfirmationModal';
 import './Checkout.css';
+import { useTranslation } from "react-i18next";
 
 const Checkout = ( {clearCart} ) => {
   const { profile } = useContext(UserContext);
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   const [userData, setUserData] = useState({
     firstName: profile?.givenName || '',
@@ -39,9 +41,9 @@ const Checkout = ( {clearCart} ) => {
   return (
     <div className="CheckoutContainer">
       <div className="Checkout">
-        <h2>Checkout</h2>
+        <h2>{t('checkout')}</h2>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{t('email')}</label>
           <input 
             type="email" 
             name="email" 
@@ -51,7 +53,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">{t('firstname')}</label>
           <input 
             type="text" 
             name="firstName" 
@@ -60,7 +62,7 @@ const Checkout = ( {clearCart} ) => {
             onChange={handleChange}
           />
 
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">{t('lastname')}</label>
           <input 
             type="text" 
             name="lastName" 
@@ -70,7 +72,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <label htmlFor="address">Address</label>
+          <label htmlFor="address">{t('adddress')}</label>
           <input 
             type="text" 
             name="address" 
@@ -80,7 +82,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <label htmlFor="postalCode">Postal Code</label>
+          <label htmlFor="postalCode">{t('postalcode')}</label>
           <input 
             type="text" 
             name="postalCode" 
@@ -90,7 +92,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <label htmlFor="city">City</label>
+          <label htmlFor="city">{t('city')}</label>
           <input 
             type="text" 
             name="city" 
@@ -100,7 +102,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <label htmlFor="country">Country</label>
+          <label htmlFor="country">{t('country')}</label>
           <input 
             type="text" 
             name="country" 
@@ -110,7 +112,7 @@ const Checkout = ( {clearCart} ) => {
             required 
           />
 
-          <button type="submit" className="ContinueButton">Submit Order</button>
+          <button type="submit" className="ContinueButton">{t('submitorder')}</button>
         </form>
       </div>
       {showConfirmationModal && (

@@ -1,4 +1,23 @@
 {
     "welcome": "Willkommen",
-    "addtocart" : "In den Warenkorb legen"
+    "addtocart" : "In den Warenkorb legen",
+    "item successfully added to cart" : "Artikel erfolgreich zum Warenkorb hinzugefügt",
+    "gotocart" : "Zum Einkaufskorb gehen",
+    "continueshopping" : "Mit dem Einkaufen fortfahren",
+    "product" : "Produkt",
+    "name" : "Name", 
+    "quantity" : "Menge",
+    "price" : "Preis",
+    "total" : "Gesamt",
+    "gotocheckout" : "Zum Checkout gehen",
+    "your cart is empty" : "Ihr Warenkorb ist leer.",
+    "email": "Email",
+    "firstname": "Vorname",
+    "lastname" : "Familienname",
+    "address": "Adresse",
+    "postalcode" : "Postleitzahl",
+    "city" : "Stadt",
+    "country" : "Land",
+    "submitorder" : "Bestellung abschicken",
+    "checkout" : "Kasse"
   }

@@ -1,4 +1,23 @@
 {
    "welcome" : "Selamat datang",
-   "addtocart" : "Tambahkan ke keranjang"
+   "addtocart" : "Tambahkan ke keranjang",
+   "item successfully added to cart" : "Berhasil ditambahkan ke keranjang",
+   "gotocart" : "Ke keranjang",
+   "continueshopping" : "Lanjut belanja",
+   "product" : "Produk",
+   "name" : "Nama", 
+   "quantity" : "Jumlah",
+   "price" : "Harga",
+   "total" : "Total",
+   "gotocheckout" : "Checkout belanjaan",
+   "your cart is empty" : "Keranjangmu masih kosong.",
+   "email": "Email",
+   "firstname": "Nama depan",
+   "lastname" : "Nama belakang",
+   "address": "Alamat",
+   "postalcode" : "Kode pos",
+   "city" : "Kota",
+   "country" : "Negara",
+   "submitorder" : "Buat pesanan",
+   "checkout" : "Pesanan"
   }

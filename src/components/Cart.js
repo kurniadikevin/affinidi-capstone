@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
+import { useTranslation } from "react-i18next";
 
 const Cart = ({ cartItems }) => {
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
@@ -18,16 +20,16 @@ const Cart = ({ cartItems }) => {
       <table>
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
+            <th>{t('product')}</th>
+            <th>{t('name')}</th>
+            <th>{t('quantity')}</th>
+            <th>{t('price')}</th>
           </tr>
         </thead>
         <tbody>
           {cartItems.length === 0 ? (
             <tr>
-              <td colSpan="4">Your cart is empty.</td>
+              <td colSpan="4">{t('your cart is empty')}</td>
             </tr>
           ) : (
             cartItems.map((item) => (
@@ -42,12 +44,12 @@ const Cart = ({ cartItems }) => {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan="3">Total</td>
+            <td colSpan="3">{t('total')}</td>
             <td>${getTotalPrice()}</td>
           </tr>
         </tfoot>
       </table>
-      <button onClick={goToCheckout} disabled={cartItems.length === 0}>Go to Checkout</button>
+      <button onClick={goToCheckout} disabled={cartItems.length === 0}>{t('gotocheckout')}</button>
     </div>
   );
 };

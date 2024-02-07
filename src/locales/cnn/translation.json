@@ -1,3 +1,23 @@
 {
-    "welcome": "欢迎"
+    "welcome": "欢迎",
+    "addtocart" : "添加到购物车",
+    "item successfully added to cart" : "商品已成功添加到购物车",
+    "gotocart" : "去购物车",
+    "continueshopping" : "继续购物",
+    "product" : "产品",
+    "name" : "姓名", 
+    "quantity" : "数量",
+    "price" : "价格",
+    "total" : "全部的",
+    "gotocheckout" : "去结账",
+    "your cart is empty" : "您的购物车是空的",
+    "email": "电子邮件",
+    "firstname": "名",
+    "lastname" : "姓",
+    "address": "地址",
+    "postalcode" : "邮政编码",
+    "city" : "城市",
+    "country" : "国家",
+    "submitorder" : "提交订单",
+    "checkout" : "查看"
   }

@@ -1,4 +1,23 @@
 {
     "welcome": "добро пожаловать",
-    "addtocart" : "добавить в корзину"
+    "addtocart" : "добавить в корзину",
+    "item successfully added to cart" : "Товар успешно добавлен в корзину",
+    "gotocart" : "Перейти в корзину",
+    "continueshopping" : "продолжить покупки",
+    "product" : "Продукт",
+    "name" : "Имя", 
+    "quantity" : "Количество",
+    "price" : "Цена",
+    "total" : "Общий",
+    "gotocheckout" : "Перейти к оформлению заказа",
+    "your cart is empty" : "Ваша корзина пуста.",
+    "email": "Электронная почта",
+    "firstname": "Имя",
+    "lastname" : "Фамилия",
+    "address": "Адрес",
+    "postalcode" : "Почтовый индекс",
+    "city" : "Город",
+    "country" : "Страна",
+    "submitorder" : "Подтвердить заказ",
+    "checkout" : "Проверить"
   }

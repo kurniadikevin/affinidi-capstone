@@ -30,6 +30,8 @@ const Header = () => {
   const findCountryCode=(input)=>{
     const codeList={
       'english' : 'en',
+      'usa' : 'en',
+      'america' : 'en',
       'china' : 'cnn',
       'france' : 'frnc',
       'germany' :'grm',
@@ -106,8 +108,8 @@ const Header = () => {
             <option value="spa" >Spanish</option>
 
             <option value="grm" >German</option>
-            <option value="hn" >Russian</option>
-            <option value="hn" >Chinese</option>
+            <option value="rss" >Russian</option>
+            <option value="cnn" >Chinese</option>
             <option value="ina" >Indonesian</option>
 
           </select>

@@ -1,4 +1,23 @@
 {
     "welcome": "स्वागत",
-    "addtocart" : "कार्ट में जोड़ें"
+    "addtocart" : "कार्ट में जोड़ें",
+    "item successfully added to cart" : "मद सफलतापूर्वक कार्ट में शामिल कर लिया गया",
+    "gotocart" : "गाड़ी पर जाना",
+    "continueshopping" : "खरीदारी जारी रखें",
+    "product" : "उत्पाद",
+    "name" : "नाम", 
+    "quantity" : "मात्रा",
+    "price" : "कीमत",
+    "total" : "कुल",
+    "gotocheckout" : "परिक्षण के लिए जाएं",
+    "your cart is empty" : "आपकी गाड़ी खाली है।",
+    "email": "ईमेल",
+    "firstname": "पहला नाम",
+    "lastname" : "उपनाम",
+    "address": "पता",
+    "postalcode" : "डाक कोड",
+    "city" : "शहर",
+    "country" : "देश",
+    "submitorder" : "आदेश प्रस्तुत",
+    "checkout" : "चेक आउट"
   }

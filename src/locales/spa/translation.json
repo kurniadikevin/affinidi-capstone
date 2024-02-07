@@ -1,4 +1,23 @@
 {
     "welcome": "Bienvenida/ bienvenido",
-    "addtocart" : "Añadir a la cesta"
+    "addtocart" : "Añadir a la cesta",
+    "item successfully added to cart" : "Artículo agregado exitosamente al carrito",
+    "gotocart" : "Ir al carrito",
+    "continueshopping" : "Seguir comprando",
+    "product" : "Producto",
+    "name" : "Nombre", 
+    "quantity" : "Cantidad",
+    "price" : "Precio",
+    "total" : "Total",
+    "gotocheckout" : "Ir a caja",
+    "your cart is empty" : "Tu carrito esta vacío.",
+    "email": "Correo electrónico",
+    "firstname": "Nombre de pila",
+    "lastname" : "Apellido",
+    "address": "DIRECCIÓN",
+    "postalcode" : "Código Postal",
+    "city" : "Ciudad",
+    "country" : "Pais",
+    "submitorder" : "Orden de envio",
+    "checkout" : "Verificar"
   }
