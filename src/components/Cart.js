@@ -4,7 +4,7 @@ import './Cart.css';
 import { useTranslation } from "react-i18next";
 import { countryConversion } from '../locales/languageCodeList';
 
-const Cart = ({ cartItems }) => {
+const Cart = ({ cartItems,addToCart, removeOneFromCart, removeItemById }) => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
@@ -22,6 +22,7 @@ const Cart = ({ cartItems }) => {
   const goToCheckout = () => {
     navigate('/checkout');
   };
+
 
   return (
     <div className="Cart">
@@ -44,8 +45,21 @@ const Cart = ({ cartItems }) => {
               <tr key={item.id}>
                 <td><img src={item.imageUrl} alt={item.name} /></td>
                 <td>{item.name}</td>
-                <td>{item.quantity}</td>
-                <td>{formatter.format(item.price * conversion)} {t('currency')}</td>
+                <td >
+                  <div id='quantity-col'>
+                    <div>{item.quantity}</div>
+                    <div>
+                      <button onClick={() => addToCart(item,false)}>+</button>
+                      <button onClick={()=> removeOneFromCart(item)}>-</button>
+                    </div>
+                  </div>
+                </td>
+                <td >
+                  <div id='price-total-col'>
+                    <div>{formatter.format(item.price * conversion)} {t('currency')}</div>
+                    <img src="/trash.png" alt="Trash"  onClick={()=> removeItemById(item)}/>
+                  </div>
+                </td>
               </tr>
             ))
           )}

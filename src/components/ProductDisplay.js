@@ -31,7 +31,7 @@ const ProductDisplay = ({ addToCart }) => {
           <img src={product.imageUrl} alt={product.name} />
           <h2>{product.name}</h2>
           <p>{formatter.format(product.price * conversion)} {t('currency')}</p>
-          <button onClick={() => addToCart(product)}>{t('addtocart')}</button>
+          <button onClick={() => addToCart(product,true)}>{t('addtocart')}</button>
         </div>
       )})}
     </div>

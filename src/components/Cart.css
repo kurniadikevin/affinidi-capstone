@@ -37,6 +37,22 @@
   cursor: not-allowed;
 }
 
+#quantity-col, #price-total-col{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#price-total-col{
+  margin-right: 20px;
+}
+
+
+#price-total-col>img{
+  height: 24px; 
+  width: auto;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .Cart img {
     width: 100%;

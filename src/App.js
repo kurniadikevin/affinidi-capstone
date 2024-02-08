@@ -16,7 +16,7 @@ function App() {
   });
   const [showModal, setShowModal] = useState(false);
 
-  const addToCart = (product) => {
+  const addToCart = (product,modalPop) => {
     setCartItems((prevItems) => {
       let updatedItems = [];
       const itemExists = prevItems.find((item) => item.id === product.id);
@@ -30,8 +30,37 @@ function App() {
       sessionStorage.setItem('cart', JSON.stringify(updatedItems));
       return updatedItems
     });
-    setShowModal(true);
+    setShowModal(modalPop);
   };
+
+  const removeOneFromCart= (product) => {
+    setCartItems((prevItems) => {
+      let updatedItems = [];
+      const itemExists = prevItems.find((item) => item.id === product.id);
+      if (itemExists) {
+        updatedItems = prevItems.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
+        );
+      }
+      //remove item with quantity zero
+      updatedItems = updatedItems.filter((item)=> item.quantity > 0)
+      sessionStorage.setItem('cart', JSON.stringify(updatedItems));
+      return updatedItems
+    });
+  };
+
+  // remove all item with same product id
+  const removeItemById=(product)=>{
+    setCartItems((prevItems=>{
+      let updatedItems = [];
+      const itemExists = prevItems.find((item) => item.id === product.id);
+      if(itemExists){
+        updatedItems = prevItems.filter((item)=> item.id !== product.id)
+      }
+      sessionStorage.setItem('cart', JSON.stringify(updatedItems));
+      return updatedItems;
+    }))
+  }
 
   const clearCart = () => {
     setCartItems([]);
@@ -54,7 +83,8 @@ function App() {
               </>
             } 
           />
-          <Route path="/cart" element={<Cart cartItems={cartItems} />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems}  addToCart={addToCart}
+             removeOneFromCart={removeOneFromCart} removeItemById={removeItemById} />} />
           <Route path="/checkout" element={<Checkout clearCart={clearCart}/>} />
         </Routes>
       </div>
