@@ -11,7 +11,7 @@ export const countryCode={
     'spanyol' : 'spa'
   }
 
-  export const countryConversion={
+export const countryConversion={
     'en' : 1,
     'cnn' : 7.11,
     'frnc' : 0.93,

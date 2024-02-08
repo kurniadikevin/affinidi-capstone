@@ -100,6 +100,7 @@ const Header = () => {
             <h1>StackShop</h1>
           </Link>
           <select className="lang-option" onChange={changeLanguageByOption}>
+            <option  selected disabled hidden>{profile.country}</option>
             <option value="en" >English</option>
             <option value="hn" >Hindi</option>
             <option value="frnc" >French</option>
