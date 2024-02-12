@@ -9,7 +9,13 @@ const ProductDisplay = ({ addToCart }) => {
     { id: 1, name: 'Hoodie', price: 10, imageUrl: 'hoodie.png' },
     { id: 2, name: 'T-Shirt', price: 15, imageUrl: 'tee.png' },
     { id: 3, name: 'Jeans', price: 30, imageUrl: 'jean.png' },
-    { id: 4, name: 'Yellow-Dress', price: 20, imageUrl: 'yellow-dress.png' },
+    { id: 4, name: 'Camo Jacket', price: 20, imageUrl: 'camo-jacket.png' },
+    { id: 5, name: 'Leather jacket', price: 40, imageUrl: 'jacket-black.png' },
+    { id: 6, name: 'Brown Coat', price: 35, imageUrl: 'brown-coat.png' },
+    { id: 7, name: 'Varsity Red', price: 25, imageUrl: 'varsity-red.png' },
+    { id: 8, name: 'Varsity Purple', price: 25, imageUrl: 'varsity-purple.png' },
+    { id: 9, name: 'Denim Jacket', price: 40, imageUrl: 'denim-jacket.png' },
+    { id: 10, name: 'Suede Boots', price: 60, imageUrl: 'suede-boots.png' },
     
   ];
 

@@ -8,11 +8,17 @@
 }
 
 .ProductItem {
-  border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
   flex: 1; 
   min-width: 200px; 
+}
+
+.ProductItem{
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow:  9px 9px 18px #d4d4d4,
+               -9px -9px 18px #ffffff;
 }
 
 .ProductItem img {

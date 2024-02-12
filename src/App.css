@@ -1,9 +1,12 @@
+
+
 /* App.css */
 .App {
-  font-family: 'Arial', sans-serif;
+  font-family: monospace;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  font-size: 12pt;
 }
 
 /* Common styles */
@@ -11,10 +14,12 @@ button {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: monospace;
+  font-size: 10pt;
 }
 
 button:hover {

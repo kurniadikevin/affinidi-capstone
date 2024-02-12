@@ -97,10 +97,10 @@ const Header = () => {
       <header className="Header">
         <div className='header-left'>
           <Link to="/">
-            <h1>StackShop</h1>
+            <h1>Stack Clothing Shop</h1>
           </Link>
-          <select className="lang-option" onChange={changeLanguageByOption}>
-            <option  selected disabled hidden>{profile.country}</option>
+          <select className="lang-option"  onChange={changeLanguageByOption}>
+            <option  selected disabled hidden>{profile ? profile.country : 'English'}</option>
             <option value="en" >English</option>
             <option value="hn" >Hindi</option>
             <option value="frnc" >French</option>
