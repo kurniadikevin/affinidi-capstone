@@ -109,6 +109,9 @@ const Header = () => {
             <option value="grm" >German</option>
             <option value="rss" >Russian</option>
             <option value="cnn" >Chinese</option>
+            <option value="jpn" >Japanese</option>
+
+            <option value="kor" >Korean</option>
             <option value="ina" >Indonesian</option>
 
           </select>

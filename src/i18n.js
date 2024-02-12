@@ -15,6 +15,9 @@ import translationGRM from './locales/grm/translation.json';
 import translationRSS from './locales/rss/translation.json';
 import translationSPA from './locales/spa/translation.json';
 
+import translationJPN from './locales/jpn/translation.json';
+import translationKOR from './locales/kor/translation.json';
+
 
 //Creating object with the variables of imported translation files
 const resources = {
@@ -42,6 +45,12 @@ const resources = {
   spa :{
     translation : translationSPA
   },
+  jpn : {
+    translation : translationJPN
+  },
+  kor : {
+    translation : translationKOR
+  }
 };
 
 //i18N Initialization
