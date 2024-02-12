@@ -17,9 +17,10 @@ export const countryCode={
     'india' : 'hn',
     'indonesia' : 'ina',
     'russia' : 'rss',
-    'spanyol' : 'spa',
+    'spain' : 'spa',
     'japan' : 'jpn',
-    'korea' : 'kor'
+    'korea' : 'kor',
+    'south korea' : 'kor'
   }
 
 export const countryConversion={
