@@ -1,20 +1,20 @@
 # Stackup Affinidi Capstone Write Up
 
-## Title: Enhancing User Experience: A React.js Clothing Store with Multilingual and Currency Support
+## Title: Enhancing User Experience: A Clothing Store with Multilingual and Currency Support
 
 ### Introduction:
 In diverse global language and currency support an online store need to include variety language and currency conversion support too. This write up explore the development and implementation of that feature, showcasing how the integration of multilingual and multi currency support significantly enhances user experience and accessibility. This feature build upon the Affinidi Capstone login feature that allow the website to detect user currency and language based on user country info.
 
 ### Project Overview:
-This project is based on Affinidi-Capstone with some improvement on multilingual and multicurrency with some of minor user interface improvement on how user access item in cart and additional product that available
+This project is based on Affinidi-Capstone with some improvement on multilingual and multicurrency with some of minor user interface improvement on how user access item in cart and additional product that available. This project server-app is separated on [affinidi-capstone-server-app](https://github.com/kurniadikevin/affinidi-capstone-server-app) repository. 
 
 # Key Feature:
 
 ## 1. Multilingual Support:
 
-- The one of main feature that added is multilingual support with Affinidi Login the store can get user country origin. This data will automatically change the language of website as long as user on scope of 18 countries that available this include  America, Australia, Canada, Ireland, New Zealand, United Kingdom, Singapore, China,Taiwan, Hongkong, France, Germany, India, Indonesia, Russia, Spain, Japan, South Korea. 
+- The one of main feature that added is multilingual support with Affinidi Login the store can get user country origin. This data will automatically change the language of website as long as user on scope of 18 countries that available this include **America, Australia, Canada, Ireland, New Zealand, United Kingdom, Singapore, China,Taiwan, Hongkong, France, Germany, India, Indonesia, Russia, Spain, Japan, South Korea**. 
 
-- If user use other name of country than the 18 countries above on Affinidi user still can switch language on dashboard/ header of the website. This language selection support 10 language including English, Chinese (Traditional), French, Germany, Indonesian, Russian, Spanish, Hindi, Japanese, and Korean. ( You can see the list of country on ```countryCode``` object at ```./src/locales/languageCodeList.js``` file )
+- If user use other name of country than the 18 countries above on Affinidi user still can switch language on dashboard/ header of the website. This language selection support 10 language including **English, Chinese (Traditional), French, Germany, Indonesian, Russian, Spanish, Hindi, Japanese, and Korean**. ( You can see the list of country on ```countryCode``` object at ```./src/locales/languageCodeList.js``` file )
 
 ### User interface:
 - ![alt text](public/screenshot/swith-lang-interface.png)
