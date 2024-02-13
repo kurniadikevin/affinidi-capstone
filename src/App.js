@@ -33,6 +33,7 @@ function App() {
     setShowModal(modalPop);
   };
 
+  // decrease quantity of product on cart
   const removeOneFromCart= (product) => {
     setCartItems((prevItems) => {
       let updatedItems = [];
