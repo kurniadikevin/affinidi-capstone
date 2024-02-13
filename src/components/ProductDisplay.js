@@ -26,7 +26,7 @@ const ProductDisplay = ({ addToCart }) => {
 
   //get current language that store in session to sync currency
   const countryData = JSON.parse( sessionStorage.getItem('language'));
-  const conversion= countryConversion[countryData];
+  const conversion= countryConversion[countryData] ?  countryConversion[countryData] : 1;
 
   return (
     <div className="ProductDisplay">

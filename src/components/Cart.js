@@ -13,7 +13,7 @@ const Cart = ({ cartItems,addToCart, removeOneFromCart, removeItemById }) => {
 
     //get current language that store in session to sync currency
     const countryData = JSON.parse( sessionStorage.getItem('language'));
-    const conversion= countryConversion[countryData];
+    const conversion= countryConversion[countryData] ?  countryConversion[countryData] : 1;
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
