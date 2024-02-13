@@ -75,5 +75,7 @@ on cart page
 -  The store now display 7 more products making total of 10 products to display on variety of prices. By add more image file on ```./public``` folder and add ```id, name, price``` data on ```products``` array in ```./src/components/ProductDisplay.js``` file.
 
 ## Screenshots
-- ![alt text](public/screenshot/capstone-product-display-sc.png)
-- ![alt text](public/screenshot/capstone-cart-sc.png)
+- ## Main page:
+- ![main-page](public/screenshot/capstone-product-display-sc.png)
+- ## Cart page: 
+- ![cart-page](public/screenshot/capstone-cart-sc.png)
