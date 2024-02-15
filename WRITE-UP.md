@@ -3,6 +3,23 @@
 ## Title: Enhancing User Experience: A Clothing Store with Multilingual and Currency Support
 
 ### Introduction:
+
+- **Since this project is using CRA from original repository, it might not work on production via vercel deployment and only work on local machine.**
+
+- **You can run it via this command:**
+
+```git clone https://github.com/kurniadikevin/affinidi-capstone.git```
+
+```cd affinidi-capstone```
+
+```npm install```
+
+then
+
+```npm start```
+
+**The project will run on localhost:3000 but the server app is already run on remote deployment on https://tough-crow-bikini.cyclic.app**
+
 In diverse global language and currency support an online store need to include variety language and currency conversion support too. This write up explore the development and implementation of that feature, showcasing how the integration of multilingual and multi currency support significantly enhances user experience and accessibility. This feature build upon the Affinidi Capstone login feature that allow the website to detect user currency and language based on user country info.
 
 ### Project Overview:
